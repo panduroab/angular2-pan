@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8080 --content-base src",
     "prestart": "webpack",
-    "start": "node ."
+    "start": "node .",
+    "webdriver:update": "webdriver-manager update",
+    "webdriver:start": "webdriver-manager start",
+    "test:e2e": "./node_modules/.bin/protractor"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "protractor": "^3.0.0",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.5",
     "webpack": "^1.12.9",
